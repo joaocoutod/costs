@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-import Home from "./pages/Home";
-import Contato from "./pages/Contato";
-import Projects from "./pages/Projects";
-import Company from "./pages/Company";
-import NewProject from "./pages/NewProject";
+import Home from "./Components/pages/Home";
+import Contato from "./Components/pages/Contato";
+import Projects from "./Components/pages/Projects";
+import Company from "./Components/pages/Company";
+import NewProject from "./Components/pages/NewProject";
 
 import Container from "./Components/layouts/Container";
 import Navbar from "./Components/layouts/Navbar";
