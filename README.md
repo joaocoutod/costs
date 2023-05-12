@@ -1,3 +1,6 @@
+npm create-react-app costs
+npm install json-server react-icons react-router-dom uuid
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
