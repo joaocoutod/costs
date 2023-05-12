@@ -5,8 +5,10 @@ import Contato from "./pages/Contato";
 import Company from "./pages/Company"
 import NewProject from "./pages/NewProject"
 
-import Container from "./layouts/Container";
-
+import Container from "./Components/layouts/Container";
+import Navbar from "./Components/layouts/Navbar";
+import Footer from "./Components/layouts/Footer"
+ 
 function App() {
   return (
     <Router>
