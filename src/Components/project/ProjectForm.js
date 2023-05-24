@@ -26,8 +26,8 @@ function ProjectForm({handleSubmit, btnText, projectData}){
 
     const submit = (e)=>{
         e.preventDefault();
-        console.log(project);
-        //handleSubmit(project)
+        //console.log(project);
+        handleSubmit(project)
 
     }
 
@@ -43,19 +43,20 @@ function ProjectForm({handleSubmit, btnText, projectData}){
                 name: e.target.options[e.target.selectedIndex].text,
             }
         })
-        console.log(e.target.name)
     }
 
     return (
         <form onSubmit={submit} className={sty.form}>
             <Input 
                 type="text" 
+                name="name"
                 text="Nome do projeto" 
                 placeholder="Insira o nome do projeto" 
                 hendleOnChenge={handleChenge} />
 
             <Input 
                 type="number" 
+                name="budget"
                 text="Orçamento do projeto" 
                 placeholder="Insira o orçamento do projeto" 
                 hendleOnChenge={handleChenge} />

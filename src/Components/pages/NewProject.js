@@ -1,10 +1,10 @@
-import {useHistory} from 'react-router'
+import {useNavigate} from 'react-router-dom'
 import sty from './NewProject.module.css'
 import ProjectForm from '../project/ProjectForm'
 
 function NewProject() {
     
-    //const history = useHistory();
+    const navigate = useNavigate();
 
     function createPost(project){
 
@@ -23,6 +23,7 @@ function NewProject() {
         .then((data) => {
             console.log(data);
             //redirect
+            navigate('/projects', {message: 'Projeto criado'})
         })
         .catch((err) => console.log(err))
 

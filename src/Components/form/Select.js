@@ -1,6 +1,6 @@
 import sty from "./Select.module.css"
 
-function Select({name, text, options, handleOnChenge, value}){
+function Select({name, text, options, hendleOnChenge, value}){
     return (
 
         <div className={sty.form_control}>
@@ -8,7 +8,7 @@ function Select({name, text, options, handleOnChenge, value}){
             <select 
                 name={name} 
                 id={name} 
-                onChange={handleOnChenge} 
+                onChange={hendleOnChenge} 
                 valor={value || ''}
                 >
 

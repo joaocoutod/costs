@@ -1,9 +1,12 @@
+import Message from "../layouts/Message"
+
 function Projects() {
     
     return (
-        <>
-            <h1>Projects</h1>
-        </>
+        <div>
+            <h1>Meus Projetos</h1>
+            <Message type="success" text="messagem"/>
+        </div>
     )
 }
 
